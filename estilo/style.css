@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    --font-title: "Roboto Slab", serif;
+    --font-text: "IBM Plex Mono", monospace;
+
+}
+body{
+    display: flex;
+    width: 99vw;
+    height: 100vh;
+    background-image: linear-gradient(140deg, #fbfaff, #6F00D5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    gap: 50px;
+    background-image: url(../midia/walpapperCardapio4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064);
+
+    }
+section{
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.064);
+   
+}
+.navegacao{
+    height: 50%;
+    align-self: center;
+    background-color: #c08af9d5;
+}
+.menu-icon{
+    display: none !important;
+}
+.h1-navegacao{
+    font-family: var(--font-title);
+    text-align: center;
+    background-color: #6F00D5;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+}
+ul.ul-navegacao{
+    list-style-position: inside;
+    list-style-type: none;
+    color: rgb(237, 235, 235);
+}
+li.li-navegacao{
+    width: 110px;
+    font-family: var(--font-text);
+    text-indent: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+.li-navegacao::before{
+    content: ' ';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-color: white;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.li-navegacao:hover{
+    cursor: pointer;
+    transform: translate(-3px, 3px);
+    transition: .2s;
+    color: #6F00D5;
+}
+.itens{
+    height: 90%;
+    width: 50%;
+    margin-bottom: 50px;
+    /* background-color: white; */
+    background-image: linear-gradient(to top, #6e00d5, white 250px);
+}
+.h1-itens{
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-title);
+    border-bottom: 2px solid rgba(113, 113, 113, 0.266);
+}
+.h1-doce::before{
+    content: '🍫';
+    margin-right: 5px;
+}
+.h1-salgado::before{
+    content: '🍣';
+    margin-right: 5px;
+}
+.ul-itens{
+    list-style-position: inside;
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    } 
+.li-itens{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+        
+}
+.doces::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-color: #6F00D5;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+.salgados::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-color: #6F00D5;
+    margin-right: 5px;
+    border-radius: 10px;
+    
+}
+.tabItens{
+    display: none;
+}
+.ativo{
+    display: block !important;
+    animation: show .5s forwards;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translate3d(-10px,0,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
