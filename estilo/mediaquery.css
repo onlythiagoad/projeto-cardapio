@@ -41,7 +41,7 @@
     .itens{
         height: 500px;
         width: 350px;     
-        background-image: linear-gradient(to top, #6e00d5 , white 150px);   
+        background-image: linear-gradient(to top, #6e00d5 , white 100px);   
     }
 
     .navegacao-altura{
