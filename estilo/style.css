@@ -117,6 +117,10 @@ li.li-navegacao{
     border-bottom: 1px solid rgba(0, 0, 0, 0.247);
         
 }
+.li-itens:hover{
+    color: color-mix(in srgb, blue 30%, red 30%);
+    cursor: pointer;
+}
 .doces::before{
     content: '';
     display: inline-block;
