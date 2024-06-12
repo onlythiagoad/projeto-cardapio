@@ -8,18 +8,18 @@
     }    
     main{
         display: block;
-        width: 500px;
+        width: 350px;
     }
     .navegacao{
         
-        width: 500px;
+        width: 350px;
         margin: auto;
         height: 80px;
     }
     .menu-icon{
         /* background-color: rgb(0, 0, 0); */
         width: 20px;
-        margin-left: 240px;
+        margin-left: 165px;
         text-align: center;
         text-align: center;
         color: white;
@@ -40,7 +40,7 @@
     }
     .itens{
         height: 500px;
-        width: 500px;     
+        width: 350px;     
         background-image: linear-gradient(to top, #6e00d5 , white 150px);   
     }
 
