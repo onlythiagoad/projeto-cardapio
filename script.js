@@ -2,7 +2,7 @@ const liNavegacao = document.querySelectorAll('.li-navegacao')
 const tabItens =  document.querySelectorAll('.tabItens')
 const iconMenu = document.querySelector('.menu-icon')
 const navegacao = document.querySelector('.navegacao')
-const ulNavegacao = document.querySelector('.ul-navegacao')
+const ulNavegacao = document.querySelector('.ul-mobile')
 
 
 function show(index){
